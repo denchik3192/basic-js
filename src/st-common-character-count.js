@@ -12,6 +12,16 @@ import { NotImplementedError } from '../extensions/index.js';
  * Strings have 3 common characters - 2 "a"s and 1 "c".
  */
 export default function getCommonCharacterCount(/* s1, s2 */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+  let filtered = [];
+
+  if(Array.isArray(members)) {
+    filtered = members.filter(function(m) {
+      return (typeof(m) == 'string');
+    })
+
+   let secFilter = filtered.map(m => m.trim().slice(0,1)).sort().join('').toUpperCase();
+
+   return secFilter.split('').sort().join('');
+   
+  }return false;
 }
